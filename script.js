@@ -1,0 +1,11 @@
+//////////////////////////////////////////////////////////////////////
+//  Ajouter une fonction qui éxécutera une animation pour
+//  faire disparaitre la fenêtre
+
+setTimeout(function(){
+
+    document.getElementById('messAdd').style.display= 'none';
+
+}, 2000);
+
+/////////////////////////////////////////////////////////////////////

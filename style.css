@@ -1,0 +1,279 @@
+/*  Pour reset les marges*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* wrapper  =   bloc contenant les réglages par défaut pour toute la page*/
+
+#wrapper {
+    padding: 0 15%;
+    display: flex;
+    flex-direction: column;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 760px;
+    line-height: 2;
+
+    /* background: linear-gradient(darkslategray, cornsilk); */
+
+    /*POUR METTRE UNE IMAGE EN ARRIERE PLAN*/
+
+    background-image: url(./image/rayons2.jpg);
+    background-size: cover; 
+    opacity: 80%;
+}
+
+/*//////////////////////////////////////TITRE//////////////////////////////*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    background: cornsilk;
+    text-align: center;
+    width: 40%;
+    box-shadow: 0px 0px 6px;
+    
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    color:coral;
+    text-align: center;
+    background: cornsilk;
+}
+
+/*//////////////////////////////////////MENU//////////////////////////////*/
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(cornsilk, coral);
+    padding: 5px;
+    width: 100%;
+}
+
+.menu:hover {
+    opacity: 80%;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+}
+
+.menu input[type='submit'] {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: cornsilk;
+    font-weight: bold;
+    box-shadow: none;
+    background: none; 
+}
+
+.menu input[type='submit']:hover {
+    background: none;
+    color: black; 
+}
+
+a {
+    text-decoration: none;
+    color: cornsilk;
+}
+
+a:hover {
+    color: black;
+    transition: ease-in-out 0.5s;
+}
+
+/*//////////////////////////////////////FORMULAIRE//////////////////////////////*/
+/*//////////////////////////////////////AJOUTER UN PRODUIT//////////////////////////////*/
+
+.formulaire {
+    border-radius: 10px;
+    width: 300px;
+    background: linear-gradient(coral, cornsilk);
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+}
+
+p {
+    color: cornsilk;
+}
+
+
+
+label {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    background: cornsilk;
+    color: coral;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0px 6px 6px rgb(0, 0, 0);
+}
+
+input[type='submit'] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 6px 6px  rgb(0, 0, 0);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type='submit']:hover {
+    background: coral;
+    color: cornsilk;
+    transition: ease-in-out 0.5s;
+}
+
+/*//////////////////////////////////////MESSAGE JS//////////////////////////////*/
+
+ #messAdd {
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 20px;
+    font-weight: bold;
+    background: cornsilk;
+    box-shadow: 0px 6px 6px  rgb(0, 0, 0);
+    animation: appear 1s;
+}
+
+#messAdd p {
+    color:coral; 
+    font-weight: bold;
+}
+
+/*////////////////////////////////Animation du message/////////////////////////*/
+
+@keyframes appear {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1) 
+    }
+
+}
+
+/*//////////////////////////////////////TABLEAU///////////////////////////////*/
+/*//////////////////////////////////////RESULTAT//////////////////////////////*/
+
+table {
+    background: cornsilk;
+    width: 500px;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+}
+
+thead {
+    background: linear-gradient(coral, cornsilk);
+    color: cornsilk;
+    font-weight: bold;
+}
+
+tbody {
+    background: linear-gradient(cornsilk, coral);
+}
+
+td h3 {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+th {
+    padding: 10px;
+    color: black;
+}
+
+.info p {
+    color: cornsilk;
+    font-size: 1.3em;
+    background: linear-gradient(cornsilk, coral);
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+table input[type='submit'] {
+    padding: 5px;
+    margin: 5px;
+}
+
+.qnt {
+    background: cornsilk;
+    border-radius: 3px;
+}
+
+/*//////////////////////////////////////RESPONSIVE//////////////////////////////*/
+
+@media only screen and (max-width:1196px) {
+
+    #wrapper {
+        height: 760px;
+        margin: auto;
+    }
+
+    header {
+        width: 40%;
+    }
+    
+}
+
+@media only screen and (max-width:996px) {
+
+    #wrapper {
+        height: 700px;
+        margin: auto;
+    }
+
+    header {
+        width: 50%;
+    }
+    
+}
+
+@media only screen and (max-width:660px) {
+
+    #wrapper {
+        height: 700px;
+        margin: auto;
+    }
+
+    header {
+        width: 80%;
+    }
+
+    table {
+        width:360px;
+    }
+
+}
+
+@media only screen and (max-width:460px) {
+
+    #wrapper {
+        height: 700px;
+        margin: auto;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    td h3 {
+        margin-left: 10px;
+        font-size: 1em;
+    }
+    
+}
