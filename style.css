@@ -6,6 +6,21 @@
     box-sizing: border-box;
 }
 
+.link {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
 /* wrapper  =   bloc contenant les réglages par défaut pour toute la page*/
 
 #wrapper {

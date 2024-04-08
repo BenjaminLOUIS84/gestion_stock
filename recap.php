@@ -164,6 +164,10 @@
 
         ?>
 
+        <div class="link">
+            <br><a href="https://www.benjaminlouis.eu/">Réalisé par Benjamin LOUIS</a><br>
+        </div>
+
     </div> 
 
     <script src="script.js"></script>
